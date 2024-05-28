@@ -9,7 +9,7 @@ def guess(x):
         if guess>random_number:
             print("it's too high, try low")
         elif guess<random_number:
-            print("it's too low, grow it")
+            print("it's too low, increase it")
     print("you did it !")
 # guess(5)
 
