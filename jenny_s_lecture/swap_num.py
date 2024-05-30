@@ -8,7 +8,7 @@ a = a - b
 print('-----swapped-----')
 print("a value is", a)
 print("b value is", b)
-#second method using third variable
+#second method using third/temporary variable
 #c=a
 #a=b
 #b=c
