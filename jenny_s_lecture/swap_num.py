@@ -5,7 +5,7 @@ print("b value is", b)
 a = a + b
 b = a - b
 a = a - b
-print('swapped-----')
+print('-----swapped-----')
 print("a value is", a)
 print("b value is", b)
 #second method using third variable
