@@ -14,7 +14,7 @@ game_logo = '''
 '''
 print(game_logo)
 
-vs='''       
+vs = '''       
 __   _____ 
 \ \ / / __|
  \ V /\__ \
@@ -141,44 +141,46 @@ data = [
 
 import random
 import os
-cnt=True
-score=0
-account_2=random.choice(data)
+
+cnt = True
+score = 0
+account_2 = random.choice(data)
 while cnt:
     account_1 = account_2
     account_2 = random.choice(data)
-    while(account_1==account_2):
-        account_2=random.choice(data)
+    while (account_1 == account_2):
+        account_2 = random.choice(data)
     def details(acc):
         name = acc['name']
         description = acc['description']
         country = acc['country']
-
         return f"{name}, {description}, from {country}"
 
     print(f"compare 1: {details(account_1)}")
+    print(f"{account_1['follower_count']}")
     print(vs)
     print(f"compare 2: {details(account_2)}")
-    choice=int(input('who has more followers? type 1 or 2 '))
+    print(f"{account_2['follower_count']}")
+    choice = int(input('who has more followers? type 1 or 2 '))
     def check_answer(guess, count1, count2):
-        if count1 < count2:
-            if guess == 1:
-                return False
-            else:
-                return True
-        else:
-            if guess == 1:
-                return True
-            else:
-                return False
-    is_correct=check_answer(choice, account_1['follower_count'], account_2['follower_count'])
-    if is_correct==True:
-        os.system('cls')
-        score=score+1
+        if count1 < count2: return guess == 2
+            # if guess == 1:
+            #     return False
+            # else:
+            #     return True
+
+        else: return guess==1
+            # if guess == 1:
+            #     return True
+            # else:
+            #     return False
+
+    is_correct = check_answer(choice, account_1['follower_count'], account_2['follower_count'])
+    os.system('cls')
+    print(game_logo)
+    if is_correct:
+        score += 1
         print(f"You are correct, Score is {score}")
     else:
         print(f"You are wrong, final score is {score}")
-        cnt=False
-
-
-
+        cnt = False
