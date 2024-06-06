@@ -1,0 +1,12 @@
+web scraping: 
+------------- is a method to get related info of a particular object from net ,
+    another definition: automation of data extraction from websites
+
+Techniques:
+-----------
+-> Manual-extraction technique : Manual copy pasting of the site content
+
+-> Automated Extraction Techniques: Web scraping software is used to automatically 
+                                    extract data from sites based on user requirement.
+
+        
