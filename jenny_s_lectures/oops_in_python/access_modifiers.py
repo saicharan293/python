@@ -20,11 +20,15 @@ class Student:
 class Branch(Student):
     pass
 st=Student('sai',12,23)
-#Name mangling => second method using dir(-object-name)
-# print(dir(st)) this provides the way to show how to access the private variables
-print(st._Student__age)
 st._Student__display()
-# st.privateDisplay() #easy method
+# st.privateDisplay() #easy method: creating a public method and 
+# calling private methods within the public method and this public method 
+# can be used when private method need to be accessed outside of that class
+#------------------------
+#Name mangling # second method using dir(-object-name)
+# print(dir(st)) 
+# : this provides the way to show how to access the private variables
+print(st._Student__age)
 br=Branch('charan',13,24)
 # print(br.__age)
 
