@@ -1,5 +1,9 @@
+# method overloading => Compile time polymorphism=> method calling is done at compile time,
+#                        occurs in same class
+#                       same name but different parameters
 
-#method overloading is not available in python,
+
+# method overloading is not available in python,
 #  so it would take the latest method definition
 # possible ways: use of default arguments,variable length argument(*args)
 from multipledispatch import dispatch
