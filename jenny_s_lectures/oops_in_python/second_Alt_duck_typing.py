@@ -10,6 +10,7 @@ class Airplane:
         return 'Zoom Zoom!'
 
 def in_the_sky(flier):
+    #isinstance checks if flier is among the following items or not
     if isinstance(flier, (Bird, Airplane)):
         print(flier.fly())
     else:
