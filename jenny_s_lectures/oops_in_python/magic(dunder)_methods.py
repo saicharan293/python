@@ -14,13 +14,20 @@ class Author:
         return f"{self.book_name} by {self.author_name}"
     
     #__call__ => to call an object as a method
-    def __call__(self):
-        print('call object')
+    def __call__(self,*args, **kwargs):
+        print('calling an object')
+
+    
+    #__del__ => to delete with a message
+    def __del__(self):
+        print('message, Author has been deleted')
     
 author=Author('Jenny','Python basics to advance',300)
 print(author)
 print('-' * 50)
-# print('-' * 50)
 print(len(author))
 print('-' * 50)
 author()
+print('-' * 50)
+del author
+# print(author)
