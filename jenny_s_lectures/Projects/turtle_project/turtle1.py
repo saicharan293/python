@@ -1,3 +1,5 @@
+#check for turtle installation: python -m turtle
+# for install: pip install PythonTurtle
 from turtle import *
 
 # getscreen()
