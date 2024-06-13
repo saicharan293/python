@@ -36,17 +36,22 @@ begin_fill()
 #         right(90)
 
 # pentagon
-lt=['red','yellow','blue','orange','green']
-
+lt=['red','yellow','blue','white','green']
+title('normal structure')
+bgcolor('black')
+speed(10)
 for i in range(3):
-    fillcolor(lt[i])
-    begin_fill()
+    # fillcolor(lt[i])
+    # begin_fill()
     print(lt[i])
     for _ in range(len(lt)):
         color(lt[_])
         forward(100)
         left(72)
-    end_fill()
+    circle(50)
+    # left(20)
+
+    # end_fill()
     left(120)
 right(5)  
 forward(150)
